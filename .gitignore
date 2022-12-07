@@ -11,6 +11,10 @@ runs
 
 # Created by patrick code
 data 
+
+# Logs are saved from the pytorch profiler
+log
+
 # Local settings
 .vscode/settings.json
 
