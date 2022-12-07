@@ -12,7 +12,15 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 
 # Device configuration
-device = torch.device('cuda' if torch.cuda.is_available() else 'mps')
+def get_device():
+    if torch.cuda.is_available():
+        return torch.device('cuda')
+    elif torch.backends.mps.is_available():
+        return torch.device('mps')
+    else:
+        return torch.device('cpu')
+
+device = get_device()
 
 # Hyper-parameters 
 input_size = 784 # 28x28
@@ -41,8 +49,10 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                           batch_size=batch_size, 
                                           shuffle=False)
 
-examples = iter(test_loader)
-example_data, example_targets = examples.next()
+# New way of loading: https://nextjournal.com/gkoehler/pytorch-mnist
+examples = enumerate(test_loader)
+batch_idx, (example_data, example_targets) = next(examples)
+
 
 for i in range(6):
     plt.subplot(2,3,i+1)
