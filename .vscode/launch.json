@@ -1,0 +1,24 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "run_alladin",
+      "type": "python",
+      "request": "launch",
+      "program": "alladin_pytorch_tensorboard.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+    },
+    {
+      "name": "run_patrick",
+      "type": "python",
+      "request": "launch",
+      "program": "patrick_pytorch_tensorboard.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+    }
+  ]
+}
