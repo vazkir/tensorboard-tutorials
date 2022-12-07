@@ -7,7 +7,7 @@ Docs
 - [Pytorch Docs - Tensorboard](https://pytorch.org/docs/stable/tensorboard.html)
 
 
-Tutorials:
+Tutorials (Alladin more advanced):
 - [Alladin - yt video](https://www.youtube.com/watch?v=RLqsxWaQdHE)
 - [Alladin - yt video code](https://github.com/aladdinpersson/Machine-Learning-Collection/blob/master/ML/Pytorch/Basics/pytorch_tensorboard_.py)
 
@@ -22,6 +22,10 @@ tensorboard --logdir=runs
 
 
 
+## Pytorch Profiler
 
+Docs
+- [Pytorch Docs - Profiler](https://pytorch.org/docs/stable/profiler.html)
+- [Pytorch Docs - Profiler Recipe](https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html)
 
 
