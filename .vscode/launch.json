@@ -19,6 +19,9 @@
       "program": "patrick_pytorch_tensorboard.py",
       "console": "integratedTerminal",
       "justMyCode": true,
+      // "args": [
+      //   "--logdir=runs",
+      // ]
     }
   ]
 }
